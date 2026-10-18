@@ -110,6 +110,27 @@ main{max-width:1080px;padding:0 24px;margin:auto}.hero{padding:72px 0 48px}h1{fo
   </p>
 </article>
 
-<article class="card"><h3>Enhancement Two</h3><p><strong>Algorithms and Data Structures</strong></p><p>C++ Course Planner: AVL tree, prerequisite processing, stronger file validation, and 20 passing automated tests.</p><a href="https://github.com/Burkenheart/Computer-Science-Capstone">Explore project files</a></article>
+<article class="card" id="enhancement-two">
+  <h3>Enhancement Two: Algorithms and Data Structures</h3>
+  <p><strong>Artifact:</strong> C++ Course Planner</p>
+  <p><strong>Original Course:</strong> CS 300 – Data Structures and Algorithms</p>
+  <p><strong>Technologies:</strong> C++, AVL Trees, Recursive Algorithms, CSV File Processing, PowerShell</p>
+
+  <h4>Original Artifact</h4>
+  <p>The original Course Planner provided a way to load course information, locate courses, and display prerequisites. It served as a foundation for examining how data structure selection affects lookup efficiency and how course relationships can be validated.</p>
+
+  <h4>Enhancement Overview</h4>
+  <p>For my CS 499 capstone, I enhanced the Course Planner by implementing an AVL tree, a self-balancing binary search tree. By maintaining a balanced structure after insertions, an AVL tree supports worst-case O(log n) search and insertion operations, avoiding the O(n) worst-case behavior of an unbalanced binary search tree.</p>
+  <p>I also added recursive prerequisite processing to display prerequisite relationships, along with stronger CSV input validation. These changes address problems such as malformed course records, missing prerequisite references, duplicate course identifiers, and circular prerequisite relationships.</p>
+
+  <h4>Testing and Verification</h4>
+  <p>I verified the enhanced Course Planner with an automated suite of <strong>20 tests, all passing</strong>. The tests covered AVL rotations and invariants, prerequisite traversal, and file-loading validation, including ensuring invalid input does not corrupt the existing catalog.</p>
+  <p><strong>Verification command:</strong></p>
+  <pre><code>.\run_tests.ps1</code></pre>
+
+  <h4>Project Documentation</h4>
+  <p><a href="https://github.com/Burkenheart/Computer-Science-Capstone/blob/main/CS_499_Milestone_Three_Narrative_Steven_Burgett.docx">View Enhancement Narrative</a></p>
+  <p><a href="https://github.com/Burkenheart/Computer-Science-Capstone/blob/main/CS_499_Milestone_Three_Artifact_Steven_Burgett.zip">View Technical Artifacts ZIP</a></p>
+</article>
 <article class="card"><h3>Enhancement Three</h3><p><strong>Databases</strong></p><p>MongoDB and JupyterDash: database-backed application and data presentation. See the submitted enhancement narrative for the specific modifications.</p><a href="https://github.com/Burkenheart/Computer-Science-Capstone">Explore project files</a></article>
 </div></section></main><footer>Steven V. Burgett · Southern New Hampshire University · CS 499</footer></body></html>
