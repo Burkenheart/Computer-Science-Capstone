@@ -1,300 +1,65 @@
-
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Steven Burgett's SNHU Computer Science Capstone ePortfolio.">
-  <title>Steven Burgett | Computer Science Portfolio</title>
-  <style>
-    :root {
-      --navy: #0b1424;
-      --panel: #142238;
-      --blue: #63aaff;
-      --text: #edf4ff;
-      --muted: #b6c5d8;
-      --border: #30445e;
-    }
-
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-
-    body {
-      margin: 0;
-      background: var(--navy);
-      color: var(--text);
-      font-family: Arial, Helvetica, sans-serif;
-      line-height: 1.75;
-    }
-
-    header {
-      padding: 20px 8%;
-      background: #101d30;
-      border-bottom: 1px solid var(--border);
-    }
-
-    nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 16px;
-    }
-
-    .brand { font-weight: bold; letter-spacing: 1px; }
-
-    nav .links {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 18px;
-    }
-
-    a { color: var(--blue); }
-    nav a { text-decoration: none; }
-
-    a:hover, a:focus-visible { text-decoration: underline; }
-
-    main { max-width: 1100px; margin: auto; padding: 0 24px; }
-
-    .hero { padding: 85px 0 65px; }
-    .eyebrow { color: var(--blue); font-weight: bold; }
-    h1 { font-size: clamp(2.2rem, 5vw, 3.8rem); line-height: 1.15; }
-    h2 { color: var(--blue); margin-top: 0; }
-    h3 { margin-bottom: 8px; }
-
-    .subtitle {
-      color: var(--muted);
-      max-width: 780px;
-      font-size: 1.1rem;
-    }
-
-    section { padding: 45px 0; scroll-margin-top: 30px; }
-    p { max-width: 900px; }
-
-    .card {
-      background: var(--panel);
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 28px;
-      margin: 20px 0;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 20px;
-    }
-
-    .grid .card { margin: 0; }
-
-    .button {
-      display: inline-block;
-      padding: 11px 18px;
-      border: 1px solid var(--blue);
-      border-radius: 7px;
-      margin: 8px 10px 8px 0;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    .button:hover, .button:focus-visible {
-      background: var(--blue);
-      color: var(--navy);
-    }
-
-    footer {
-      text-align: center;
-      border-top: 1px solid var(--border);
-      padding: 28px;
-      color: var(--muted);
-    }
-
-    @media (max-width: 600px) {
-      .hero { padding: 55px 0 30px; }
-      .card { padding: 20px; }
-    }
-  </style>
-</head>
-
-<body>
-  <header>
-    <nav aria-label="Main navigation">
-      <div class="brand">STEVEN V. BURGETT</div>
-      <div class="links">
-        <a href="#about">About</a>
-        <a href="#assessment">Self-Assessment</a>
-        <a href="#review">Code Review</a>
-        <a href="#projects">Enhancements</a>
-      </div>
-    </nav>
-  </header>
-
-  <main>
-    <section class="hero" id="about">
-      <div class="eyebrow">SNHU | CS 499 CAPSTONE</div>
-      <h1>Computer Science ePortfolio</h1>
-      <p class="subtitle">
-        Software Engineering | Algorithms and Data Structures |
-        Database Development | Cybersecurity
-      </p>
-      <p>
-        Welcome to my professional portfolio. I am a Computer
-        Science student at Southern New Hampshire University
-        and a United States Marine Corps Staff Sergeant with
-        extensive experience in communications, networking,
-        technical troubleshooting, and leadership.
-      </p>
-      <p>
-        This portfolio demonstrates my growth as a software
-        developer through three enhanced projects, technical
-        documentation, automated testing, and a code review.
-      </p>
-      <a class="button" href="#assessment">Read Self-Assessment</a>
-      <a class="button" href="#projects">Explore Projects</a>
-    </section>
-
-    <section id="assessment">
-      <h2>Professional Self-Assessment</h2>
-      <div class="card">
-        <h3>Professional Growth and Career Development</h3>
-        <p>
-          My Bachelor of Science in Computer Science program
-          has strengthened my knowledge of software engineering,
-          algorithms, database management, cybersecurity,
-          and application development.
-        </p>
-        <p>
-          My experience as a Marine Corps Communications Chief
-          has shaped my approach to technical problem-solving.
-          Supervising 16 Marines and managing approximately
-          $2.65 million in communications equipment has
-          reinforced the importance of accountability,
-          reliability, teamwork, and effective communication.
-        </p>
-
-        <h3>Technical Skills and Collaboration</h3>
-        <p>
-          Through my coursework, I have developed applications
-          using Java, C++, Python, and JavaScript. Projects
-          involving Android development, full-stack applications,
-          database integration, and software testing have
-          expanded my technical capabilities.
-        </p>
-        <p>
-          My military and academic experiences have also
-          strengthened my ability to communicate with
-          stakeholders, evaluate requirements, document
-          technical decisions, and collaborate with others.
-        </p>
-
-        <h3>Algorithms, Software Engineering, and Security</h3>
-        <p>
-          My capstone projects demonstrate my ability to improve
-          existing software through input validation, automated
-          testing, efficient data structures, and database
-          integration. My coursework in software security
-          reinforced the importance of protecting data,
-          identifying vulnerabilities, and considering security
-          throughout the development lifecycle.
-        </p>
-
-        <h3>Professional Goals</h3>
-        <p>
-          My goal is to combine my background in military
-          communications and networking with my computer
-          science education to pursue opportunities in
-          software engineering, technical systems support,
-          networking, and cybersecurity.
-        </p>
-
-        <h3>Portfolio Overview</h3>
-        <p>
-          The three enhancements presented below demonstrate
-          complementary skills in software design, algorithmic
-          problem-solving, and database development. Together,
-          they illustrate my ability to analyze existing systems,
-          implement improvements, and evaluate their reliability.
-        </p>
-      </div>
-    </section>
-
-    <section id="review">
-      <h2>Code Review</h2>
-      <div class="card">
-        <p>
-          My code review examines the original implementations
-          of my selected projects, identifies opportunities
-          for improvement, and explains the enhancements
-          planned for each artifact.
-        </p>
-        <p>
-          The review focuses on software architecture,
-          functionality, efficiency, testing, and security.
-        </p>
-        <a class="button"
-           href="https://github.com/Burkenheart/Computer-Science-Capstone/tree/main/CS499_Code_Review"
-           target="_blank" rel="noopener noreferrer">
-          View Code Review Materials
-        </a>
-      </div>
-    </section>
-
-    <section id="projects">
-      <h2>Capstone Enhancements</h2>
-      <div class="grid">
-
-        <article class="card">
-          <h3>Enhancement One</h3>
-          <p><strong>Software Design and Engineering</strong></p>
-          <p>Android Inventory Application</p>
-          <p>
-            Enhanced input validation, maintainability, and
-            automated testing. Expanded the unit test suite
-            from one test to five passing tests.
-          </p>
-          <a href="https://github.com/Burkenheart/Computer-Science-Capstone"
-             target="_blank" rel="noopener noreferrer">
-            View Repository
-          </a>
-        </article>
-
-        <article class="card">
-          <h3>Enhancement Two</h3>
-          <p><strong>Algorithms and Data Structures</strong></p>
-          <p>C++ Course Planner</p>
-          <p>
-            Implemented an AVL tree, recursive prerequisite
-            processing, improved file validation, and
-            automated verification with 20 passing tests.
-          </p>
-          <a href="https://github.com/Burkenheart/Computer-Science-Capstone"
-             target="_blank" rel="noopener noreferrer">
-            View Repository
-          </a>
-        </article>
-
-        <article class="card">
-          <h3>Enhancement Three</h3>
-          <p><strong>Databases</strong></p>
-          <p>MongoDB and JupyterDash Dashboard</p>
-          <p>
-            Demonstrates database integration, data retrieval,
-            and interactive data presentation. The accompanying
-            narrative documents the database enhancement.
-          </p>
-          <a href="https://github.com/Burkenheart/Computer-Science-Capstone"
-             target="_blank" rel="noopener noreferrer">
-            View Repository
-          </a>
-        </article>
-
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <p>Steven V. Burgett | Southern New Hampshire University</p>
-    <p>CS 499 Computer Science Capstone</p>
-  </footer>
-</body>
-</html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Steven V. Burgett's SNHU CS 499 computer science capstone ePortfolio.">
+<title>Steven V. Burgett | Computer Science Capstone</title>
+<style>
+:root{color-scheme:dark;--bg:#0b1424;--panel:#142238;--accent:#63aaff;--fg:#edf4ff;--muted:#c2cede;--border:#30445e}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.8 Arial,Helvetica,sans-serif}
+a{color:var(--accent)}a:focus-visible{outline:3px solid #fff;outline-offset:4px}
+header{background:#101d30;border-bottom:1px solid var(--border);padding:18px max(24px,calc((100vw - 1080px)/2))}
+nav{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}nav a{margin-right:18px;text-decoration:none}.brand{font-weight:700;letter-spacing:.08em}
+main{max-width:1080px;padding:0 24px;margin:auto}.hero{padding:72px 0 48px}h1{font-size:clamp(2.1rem,5vw,3.6rem);line-height:1.18;margin:.2em 0}h2{color:var(--accent);font-size:1.8rem}h3{font-size:1.18rem;margin:2.2rem 0 .5rem;color:#e5f1ff}p{max-width:90ch;margin:.65em 0 1.1em}.eyebrow{color:var(--accent);font-weight:700}.muted{color:var(--muted)}section{padding:34px 0;scroll-margin-top:16px}.card{background:var(--panel);border:1px solid var(--border);border-radius:12px;padding:30px;margin:20px 0}.card h3:first-child{margin-top:0}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px}.grid .card{margin:0}.button{display:inline-block;border:1px solid var(--accent);border-radius:7px;padding:10px 16px;margin:8px 12px 8px 0;text-decoration:none;font-weight:700}.button:hover{background:var(--accent);color:var(--bg)}footer{text-align:center;padding:30px;border-top:1px solid var(--border);color:var(--muted)}
+@media(max-width:650px){.hero{padding:42px 0 20px}.card{padding:20px}nav a{margin-right:12px}}
+</style></head><body>
+<header><nav aria-label="Main navigation"><div class="brand">STEVEN V. BURGETT</div><div><a href="#assessment">Self-Assessment</a><a href="#review">Code Review</a><a href="#projects">Enhancements</a></div></nav></header>
+<main><section class="hero"><div class="eyebrow">SOUTHERN NEW HAMPSHIRE UNIVERSITY · CS 499</div><h1>Computer Science ePortfolio</h1><p class="muted">Software Engineering · Algorithms &amp; Data Structures · Databases · Security</p><p>Welcome to my capstone portfolio, showcasing technical enhancements and professional growth through the Computer Science program.</p><a class="button" href="#assessment">Read Self-Assessment</a><a class="button" href="#projects">Explore Projects</a></section>
+<section id="assessment"><h2>Professional Self-Assessment</h2><p class="muted">Steven V. Burgett · CS 499 Computer Science Capstone · Professor Saba Jamalian · October 18, 2026</p><div class="card">
+<h3>Professional Growth and Career Development</h3>
+<p>Throughout my Bachelor of Science in Computer Science program at Southern New Hampshire University, I have developed the technical knowledge, problem-solving abilities, and professional skills necessary to transition into the computer science industry. My academic experience has strengthened my understanding of software engineering, algorithms, data structures, database management, cybersecurity, and application development. More importantly, it has taught me how to apply these concepts to real-world problems while considering reliability, efficiency, maintainability, and the needs of end users.</p>
+<p>My professional background as a Staff Sergeant in the United States Marine Corps has significantly influenced my approach to computer science. As a Communications Chief, I have been responsible for supervising 16 Marines, maintaining accountability of approximately $2.65 million in communications equipment, and supporting mission-critical communications systems. These responsibilities have required technical troubleshooting, operational planning, leadership, risk management, and effective communication with personnel possessing different levels of technical expertise.</p>
+<p>Throughout my degree program, I recognized that many of the skills I developed in the military translate directly into software development and information technology. Troubleshooting communications networks requires systematic analysis, identification of potential failure points, implementation of corrective actions, and verification of results. These same principles are fundamental to software debugging, system testing, and technical problem-solving.</p>
+<p>Completing my computer science degree and developing this ePortfolio have helped me establish a clearer professional direction. My goal is to combine my experience in military communications and networking with my education in computer science to pursue opportunities in technical systems support, software engineering, networking, and cybersecurity.</p>
+<h3>Collaboration and Communication</h3>
+<p>Collaboration has been a consistent part of my professional and academic development. In the Marine Corps, I have worked alongside military personnel, leadership teams, and interagency partners to support communications requirements and operational objectives. These experiences taught me the importance of communicating technical information clearly, establishing shared expectations, and ensuring that team members understand how their responsibilities contribute to mission success.</p>
+<p>My computer science coursework reinforced these principles through project planning, technical documentation, software design, and peer discussions. In CS 255, System Analysis and Design, I developed requirements and design documentation for the DriverPass system. This experience demonstrated the importance of translating stakeholder expectations into functional requirements that developers can implement and validate.</p>
+<p>Similarly, my work in CS 465, Full Stack Development I, strengthened my ability to consider both the technical architecture of an application and the needs of its users. Developing components of a full-stack travel application required me to consider how the customer-facing interface, administrative functionality, application server, and database interact.</p>
+<p>These experiences have prepared me to contribute to collaborative software development environments in which technical decisions must account for organizational objectives, user expectations, and project constraints.</p>
+<h3>Software Engineering and Development</h3>
+<p>Throughout my coursework, I gained experience developing applications using Java, C++, Python, JavaScript, and supporting development frameworks. These projects strengthened my understanding of object-oriented programming, modular design, software testing, debugging, and application architecture.</p>
+<p>One significant example is the Android Inventory Application I originally developed in CS 360, Mobile Architecture and Programming. The project introduced me to mobile application development and the importance of designing software around practical user requirements.</p>
+<p>During my capstone, I revisited this application to improve its software engineering quality. I focused on strengthening input validation, improving maintainability, and expanding automated testing. The enhanced application demonstrated measurable improvement in testing coverage, increasing from one automated unit test to five, with all five tests passing.</p>
+<p>This enhancement reinforced the importance of treating testing and validation as integral parts of software development rather than activities performed only after implementation. It also demonstrated how revisiting an existing application can reveal opportunities to improve its reliability and long-term maintainability.</p>
+<h3>Algorithms and Data Structures</h3>
+<p>My coursework in algorithms and data structures taught me how to evaluate computing solutions based on performance, efficiency, and suitability for a particular problem. I learned that selecting an appropriate data structure can significantly influence how effectively an application manages and retrieves information.</p>
+<p>For my capstone, I enhanced a C++ course-planning application by incorporating an AVL tree. This self-balancing binary search tree provides efficient search, insertion, and retrieval operations while maintaining a balanced structure.</p>
+<p>The enhancement also included recursive prerequisite processing, stronger input validation, and automated testing. I verified the improved implementation using a test suite containing 20 tests, all of which passed.</p>
+<p>This experience strengthened my ability to evaluate algorithmic trade-offs, implement more sophisticated data structures, and verify that improvements do not compromise existing functionality.</p>
+<h3>Database Management and Data-Driven Applications</h3>
+<p>Database management has been another important component of my academic development. Through CS 340, Client/Server Development, I gained experience working with MongoDB, Python, database operations, and interactive dashboards.</p>
+<p>The original project introduced me to the relationship between persistent data storage, application logic, and data visualization. It demonstrated how developers can transform stored information into meaningful results that support user needs and decision-making.</p>
+<p>My work with database-backed applications also helped me understand the importance of consistent data structures, accurate queries, error handling, and maintaining clear boundaries between application components.</p>
+<p>Additionally, my experience in CS 465 expanded my understanding of full-stack development through the integration of MongoDB, Express, Angular, and Node.js. Working with these technologies reinforced the importance of reliable communication between the client interface, application server, and database.</p>
+<p>These experiences have prepared me to work with applications that require reliable data management and integration across multiple software components.</p>
+<h3>Security and Responsible Computing</h3>
+<p>My professional experience in military communications has given me a strong appreciation for information security, access control, operational risk, and the protection of sensitive resources. In communications environments, security is an essential part of maintaining operational readiness and protecting information.</p>
+<p>My academic coursework strengthened this perspective by introducing secure coding practices, software vulnerabilities, input validation, and risk mitigation.</p>
+<p>In CS 305, Software Security, I explored methods for identifying security weaknesses and improving the security posture of software applications. This coursework helped me understand why security should be incorporated into software design and development rather than treated as an afterthought.</p>
+<p>One practical example of applying security principles occurred during the enhancement of my Android Inventory Application. By implementing dedicated input-validation logic and automated tests, I improved the application&#x27;s ability to reject invalid input before it could be processed. This experience reinforced the importance of validating data at application boundaries, reducing opportunities for unexpected behavior, and verifying security-related controls through repeatable testing. Although input validation alone does not guarantee application security, it represents an important component of developing reliable and defensible software.</p>
+<p>My capstone enhancements reinforced this security mindset through attention to input validation, predictable error handling, and data integrity. I recognize that secure software development requires continuous evaluation of potential vulnerabilities, appropriate access controls, and careful management of data throughout an application&#x27;s lifecycle.</p>
+<h3>Introduction to the Capstone Artifacts</h3>
+<p>The three artifacts included in my ePortfolio collectively demonstrate my development across the major areas of computer science.</p>
+<p>The first artifact, an Android Inventory Application, represents software design and engineering. Its enhancement demonstrates my ability to improve application quality through validation, maintainability, and automated testing.</p>
+<p>The second artifact, a C++ Course Planner, represents algorithms and data structures. Its enhancement demonstrates my ability to implement an efficient self-balancing tree, manage prerequisite relationships, strengthen file validation, and verify correctness through comprehensive automated testing.</p>
+<p>The third artifact, a MongoDB and JupyterDash application originally developed in CS 340, represents database development. It demonstrates my experience integrating database operations with application functionality and presenting information through an interactive interface. Its accompanying enhancement narrative provides the detailed explanation of the database improvements and their verification.</p>
+<p>Together, these projects demonstrate how software architecture, algorithms, databases, and security considerations contribute to developing dependable computing solutions. They also illustrate my progression from implementing basic functionality to evaluating and improving existing systems using more advanced development practices.</p>
+<h3>Conclusion</h3>
+<p>Completing the Computer Science program at Southern New Hampshire University has strengthened my technical abilities while providing a foundation for continued professional development. My coursework has challenged me to think critically, evaluate alternative solutions, communicate technical decisions, and develop software that meets practical requirements. Through my capstone enhancements, I have demonstrated my ability to apply these skills to existing applications while improving their reliability, efficiency, and maintainability.</p>
+<p>My military experience has contributed leadership, discipline, adaptability, and a mission-focused approach to problem-solving. Combined with my academic background, these qualities position me to contribute effectively to technical teams and continue growing within the computer science industry.</p>
+<p>This ePortfolio represents more than a collection of academic projects. It demonstrates my ability to examine existing systems, identify opportunities for improvement, implement technically sound enhancements, and validate the results. As I transition into the next stage of my professional career, I intend to continue developing my expertise in software engineering, networking, and cybersecurity while applying the leadership and technical skills I have developed throughout my military service and education.</p>
+</div></section>
+<section id="review"><h2>Code Review</h2><div class="card"><p>The code review discusses original project functionality, improvement opportunities, and planned enhancements. The final portfolio should link directly to the playable recording once its URL is confirmed.</p><a class="button" href="https://github.com/Burkenheart/Computer-Science-Capstone/tree/main/CS499_Code_Review">View Code Review Materials</a></div></section>
+<section id="projects"><h2>Capstone Enhancements</h2><div class="grid">
+<article class="card"><h3>Enhancement One</h3><p><strong>Software Design and Engineering</strong></p><p>Android Inventory Application: input validation, maintainability, and expansion from one to five passing unit tests.</p><a href="https://github.com/Burkenheart/Computer-Science-Capstone">Explore project files</a></article>
+<article class="card"><h3>Enhancement Two</h3><p><strong>Algorithms and Data Structures</strong></p><p>C++ Course Planner: AVL tree, prerequisite processing, stronger file validation, and 20 passing automated tests.</p><a href="https://github.com/Burkenheart/Computer-Science-Capstone">Explore project files</a></article>
+<article class="card"><h3>Enhancement Three</h3><p><strong>Databases</strong></p><p>MongoDB and JupyterDash: database-backed application and data presentation. See the submitted enhancement narrative for the specific modifications.</p><a href="https://github.com/Burkenheart/Computer-Science-Capstone">Explore project files</a></article>
+</div></section></main><footer>Steven V. Burgett · Southern New Hampshire University · CS 499</footer></body></html>
