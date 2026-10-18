@@ -1,0 +1,300 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Steven Burgett's SNHU Computer Science Capstone ePortfolio.">
+  <title>Steven Burgett | Computer Science Portfolio</title>
+  <style>
+    :root {
+      --navy: #0b1424;
+      --panel: #142238;
+      --blue: #63aaff;
+      --text: #edf4ff;
+      --muted: #b6c5d8;
+      --border: #30445e;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      background: var(--navy);
+      color: var(--text);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.75;
+    }
+
+    header {
+      padding: 20px 8%;
+      background: #101d30;
+      border-bottom: 1px solid var(--border);
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .brand { font-weight: bold; letter-spacing: 1px; }
+
+    nav .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+    }
+
+    a { color: var(--blue); }
+    nav a { text-decoration: none; }
+
+    a:hover, a:focus-visible { text-decoration: underline; }
+
+    main { max-width: 1100px; margin: auto; padding: 0 24px; }
+
+    .hero { padding: 85px 0 65px; }
+    .eyebrow { color: var(--blue); font-weight: bold; }
+    h1 { font-size: clamp(2.2rem, 5vw, 3.8rem); line-height: 1.15; }
+    h2 { color: var(--blue); margin-top: 0; }
+    h3 { margin-bottom: 8px; }
+
+    .subtitle {
+      color: var(--muted);
+      max-width: 780px;
+      font-size: 1.1rem;
+    }
+
+    section { padding: 45px 0; scroll-margin-top: 30px; }
+    p { max-width: 900px; }
+
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 28px;
+      margin: 20px 0;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+
+    .grid .card { margin: 0; }
+
+    .button {
+      display: inline-block;
+      padding: 11px 18px;
+      border: 1px solid var(--blue);
+      border-radius: 7px;
+      margin: 8px 10px 8px 0;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .button:hover, .button:focus-visible {
+      background: var(--blue);
+      color: var(--navy);
+    }
+
+    footer {
+      text-align: center;
+      border-top: 1px solid var(--border);
+      padding: 28px;
+      color: var(--muted);
+    }
+
+    @media (max-width: 600px) {
+      .hero { padding: 55px 0 30px; }
+      .card { padding: 20px; }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav aria-label="Main navigation">
+      <div class="brand">STEVEN V. BURGETT</div>
+      <div class="links">
+        <a href="#about">About</a>
+        <a href="#assessment">Self-Assessment</a>
+        <a href="#review">Code Review</a>
+        <a href="#projects">Enhancements</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="about">
+      <div class="eyebrow">SNHU | CS 499 CAPSTONE</div>
+      <h1>Computer Science ePortfolio</h1>
+      <p class="subtitle">
+        Software Engineering | Algorithms and Data Structures |
+        Database Development | Cybersecurity
+      </p>
+      <p>
+        Welcome to my professional portfolio. I am a Computer
+        Science student at Southern New Hampshire University
+        and a United States Marine Corps Staff Sergeant with
+        extensive experience in communications, networking,
+        technical troubleshooting, and leadership.
+      </p>
+      <p>
+        This portfolio demonstrates my growth as a software
+        developer through three enhanced projects, technical
+        documentation, automated testing, and a code review.
+      </p>
+      <a class="button" href="#assessment">Read Self-Assessment</a>
+      <a class="button" href="#projects">Explore Projects</a>
+    </section>
+
+    <section id="assessment">
+      <h2>Professional Self-Assessment</h2>
+      <div class="card">
+        <h3>Professional Growth and Career Development</h3>
+        <p>
+          My Bachelor of Science in Computer Science program
+          has strengthened my knowledge of software engineering,
+          algorithms, database management, cybersecurity,
+          and application development.
+        </p>
+        <p>
+          My experience as a Marine Corps Communications Chief
+          has shaped my approach to technical problem-solving.
+          Supervising 16 Marines and managing approximately
+          $2.65 million in communications equipment has
+          reinforced the importance of accountability,
+          reliability, teamwork, and effective communication.
+        </p>
+
+        <h3>Technical Skills and Collaboration</h3>
+        <p>
+          Through my coursework, I have developed applications
+          using Java, C++, Python, and JavaScript. Projects
+          involving Android development, full-stack applications,
+          database integration, and software testing have
+          expanded my technical capabilities.
+        </p>
+        <p>
+          My military and academic experiences have also
+          strengthened my ability to communicate with
+          stakeholders, evaluate requirements, document
+          technical decisions, and collaborate with others.
+        </p>
+
+        <h3>Algorithms, Software Engineering, and Security</h3>
+        <p>
+          My capstone projects demonstrate my ability to improve
+          existing software through input validation, automated
+          testing, efficient data structures, and database
+          integration. My coursework in software security
+          reinforced the importance of protecting data,
+          identifying vulnerabilities, and considering security
+          throughout the development lifecycle.
+        </p>
+
+        <h3>Professional Goals</h3>
+        <p>
+          My goal is to combine my background in military
+          communications and networking with my computer
+          science education to pursue opportunities in
+          software engineering, technical systems support,
+          networking, and cybersecurity.
+        </p>
+
+        <h3>Portfolio Overview</h3>
+        <p>
+          The three enhancements presented below demonstrate
+          complementary skills in software design, algorithmic
+          problem-solving, and database development. Together,
+          they illustrate my ability to analyze existing systems,
+          implement improvements, and evaluate their reliability.
+        </p>
+      </div>
+    </section>
+
+    <section id="review">
+      <h2>Code Review</h2>
+      <div class="card">
+        <p>
+          My code review examines the original implementations
+          of my selected projects, identifies opportunities
+          for improvement, and explains the enhancements
+          planned for each artifact.
+        </p>
+        <p>
+          The review focuses on software architecture,
+          functionality, efficiency, testing, and security.
+        </p>
+        <a class="button"
+           href="https://github.com/Burkenheart/Computer-Science-Capstone/tree/main/CS499_Code_Review"
+           target="_blank" rel="noopener noreferrer">
+          View Code Review Materials
+        </a>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Capstone Enhancements</h2>
+      <div class="grid">
+
+        <article class="card">
+          <h3>Enhancement One</h3>
+          <p><strong>Software Design and Engineering</strong></p>
+          <p>Android Inventory Application</p>
+          <p>
+            Enhanced input validation, maintainability, and
+            automated testing. Expanded the unit test suite
+            from one test to five passing tests.
+          </p>
+          <a href="https://github.com/Burkenheart/Computer-Science-Capstone"
+             target="_blank" rel="noopener noreferrer">
+            View Repository
+          </a>
+        </article>
+
+        <article class="card">
+          <h3>Enhancement Two</h3>
+          <p><strong>Algorithms and Data Structures</strong></p>
+          <p>C++ Course Planner</p>
+          <p>
+            Implemented an AVL tree, recursive prerequisite
+            processing, improved file validation, and
+            automated verification with 20 passing tests.
+          </p>
+          <a href="https://github.com/Burkenheart/Computer-Science-Capstone"
+             target="_blank" rel="noopener noreferrer">
+            View Repository
+          </a>
+        </article>
+
+        <article class="card">
+          <h3>Enhancement Three</h3>
+          <p><strong>Databases</strong></p>
+          <p>MongoDB and JupyterDash Dashboard</p>
+          <p>
+            Demonstrates database integration, data retrieval,
+            and interactive data presentation. The accompanying
+            narrative documents the database enhancement.
+          </p>
+          <a href="https://github.com/Burkenheart/Computer-Science-Capstone"
+             target="_blank" rel="noopener noreferrer">
+            View Repository
+          </a>
+        </article>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Steven V. Burgett | Southern New Hampshire University</p>
+    <p>CS 499 Computer Science Capstone</p>
+  </footer>
+</body>
+</html>
