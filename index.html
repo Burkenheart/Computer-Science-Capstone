@@ -130,7 +130,30 @@ main{max-width:1080px;padding:0 24px;margin:auto}.hero{padding:72px 0 48px}h1{fo
 
   <h4>Project Documentation</h4>
   <p><a href="https://github.com/Burkenheart/Computer-Science-Capstone/blob/main/CS_499_Milestone_Three_Narrative_Steven_Burgett.docx">View Enhancement Narrative</a></p>
-  <p><a href=https://github.com/Burkenheart/Computer-Science-Capstone/blob/main/CS499_Milestone_Three_With_Restored_Tests.zip>View Technical Artifacts ZIP</a></p>
+  <p><a href="https://github.com/Burkenheart/Computer-Science-Capstone/blob/main/CS499_Milestone_Three_With_Restored_Tests.zip">View Technical Artifacts ZIP</a></p>
 </article>
-<article class="card"><h3>Enhancement Three</h3><p><strong>Databases</strong></p><p>MongoDB and JupyterDash: database-backed application and data presentation. See the submitted enhancement narrative for the specific modifications.</p><a href="https://github.com/Burkenheart/Computer-Science-Capstone">Explore project files</a></article>
+<article class="card" id="enhancement-three">
+  <h3>Enhancement Three: Databases</h3>
+  <p><strong>Artifact:</strong> Grazioso Salvare Animal Shelter Dashboard</p>
+  <p><strong>Original Course:</strong> CS 340 – Client/Server Development</p>
+  <p><strong>Technologies:</strong> Python, MongoDB, PyMongo, Dash, Jupyter Notebook, Pandas, Plotly, unittest, mongomock</p>
+
+  <h4>Original Artifact</h4>
+  <p>The original project used an AnimalShelter Python module for MongoDB create, read, update, and delete operations. Its Jupyter dashboard displayed shelter records in a table, breed distribution chart, and location map to help identify animals that meet rescue-training criteria.</p>
+
+  <h4>Enhancement Overview</h4>
+  <p>I improved database security and reliability by moving connection credentials into environment variables, validating required animal fields and nonnegative ages, rejecting unsafe update keys and empty update or delete queries, and distinguishing database errors from valid queries with no results.</p>
+  <p>I added a reusable query builder supporting animal ID, type, breed, and inclusive age ranges. Custom filters are intersected with rescue criteria rather than replacing them. The enhanced dashboard uses the filtered results consistently in its table, chart, and map, with safer handling of missing or invalid coordinates.</p>
+  <p>I also added explicit nonunique indexes for animal ID, breed, age, and a compound rescue search. These indexes represent a documented design choice; I have not yet measured performance improvements against the live dataset.</p>
+
+  <h4>Testing and Verification</h4>
+  <p>The submitted verification record reports <strong>14 passing automated tests</strong> using an in-memory MongoDB substitute and simulated failures. Tests cover database operations, validation, query construction, index definitions, dashboard callbacks, and empty or invalid results. These tests do not establish live database connectivity, production performance, or browser behavior.</p>
+  <p><strong>Verification command (from the Enhanced directory):</strong></p>
+  <pre><code>python -m unittest discover -s tests -v</code></pre>
+  <p><strong>Remaining verification:</strong> Run <code>python verify_live.py</code> with an authorized MongoDB account after creating the indexes, and inspect the dashboard against the actual shelter dataset.</p>
+
+  <h4>Project Documentation</h4>
+  <p><a href="https://github.com/Burkenheart/Computer-Science-Capstone/blob/main/CS499_Milestone_Four_Narrative_Steven_Burgett.docx">View Enhancement Narrative</a></p>
+  <p><a href="https://github.com/Burkenheart/Computer-Science-Capstone/blob/main/CS499_Milestone_Four_Portfolio_Safe_Enhanced.zip">View Enhanced Technical Artifacts ZIP</a></p>
+</article>
 </div></section></main><footer>Steven V. Burgett · Southern New Hampshire University · CS 499</footer></body></html>
